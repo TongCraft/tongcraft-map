@@ -1,0 +1,262 @@
+:root {
+  --paper: #f6f2e7;
+  --ink: #28312f;
+  --moss: #486846;
+  --copper: #a65028;
+  --line: #d8d2c2;
+  --panel: #fffdf7;
+  --muted: #6b706a;
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+  background: var(--paper);
+  color: var(--ink);
+  font-family:
+    "Segoe UI",
+    "Microsoft YaHei",
+    system-ui,
+    sans-serif;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  min-height: 56px;
+  padding: 0 20px;
+  border-bottom: 1px solid var(--line);
+  background: var(--paper);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand-mark {
+  width: 18px;
+  height: 18px;
+  background:
+    linear-gradient(90deg, transparent 50%, rgba(40, 49, 47, 0.25) 50%),
+    linear-gradient(transparent 50%, rgba(40, 49, 47, 0.25) 50%),
+    var(--moss);
+  background-size: 9px 9px;
+  border: 1px solid var(--ink);
+}
+
+h1 {
+  margin: 0;
+  font-size: 18px;
+  letter-spacing: 0.02em;
+}
+
+.dimensions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.dimension {
+  appearance: none;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--ink);
+  padding: 6px 12px;
+  font: inherit;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.dimension:hover {
+  border-color: var(--moss);
+}
+
+.dimension.active {
+  background: var(--moss);
+  border-color: var(--moss);
+  color: #fff;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 310px minmax(0, 1fr);
+  height: calc(100vh - 57px);
+}
+
+.panel {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 18px;
+  border-right: 1px solid var(--line);
+  background: var(--panel);
+  overflow: auto;
+}
+
+.note {
+  margin: 0;
+  padding: 8px 10px;
+  border-left: 3px solid var(--copper);
+  background: #fbf3ea;
+  font-size: 13px;
+}
+
+.field {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+select,
+.button {
+  width: 100%;
+  min-height: 38px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: #fff;
+  color: var(--ink);
+  font: inherit;
+  font-size: 14px;
+  padding: 8px 10px;
+}
+
+.button {
+  border-color: var(--ink);
+  background: var(--ink);
+  color: var(--paper);
+  cursor: pointer;
+}
+
+.button:hover {
+  background: var(--moss);
+  border-color: var(--moss);
+}
+
+.detail {
+  min-height: 80px;
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+}
+
+.detail h2 {
+  margin: 0 0 6px;
+  font-size: 16px;
+}
+
+.detail ul {
+  margin: 4px 0 0;
+  padding-left: 20px;
+}
+
+.coordinate {
+  margin: 0;
+  font-family: "Cascadia Mono", Consolas, monospace;
+  font-size: 13px;
+}
+
+.status {
+  margin: 0;
+  min-height: 1.5em;
+  font-size: 13px;
+  color: var(--moss);
+}
+
+.status.error {
+  color: #a02a1e;
+}
+
+.muted {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.small {
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+#map {
+  min-height: 0;
+  background:
+    radial-gradient(circle at 1px 1px, #e7e0d2 1px, transparent 0) 0 0 / 16px 16px,
+    var(--paper);
+}
+
+.world-tile {
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
+.coords {
+  position: fixed;
+  right: 14px;
+  bottom: 14px;
+  z-index: 500;
+  padding: 6px 10px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: rgba(255, 253, 247, 0.92);
+  font-family: "Cascadia Mono", Consolas, monospace;
+  font-size: 12px;
+  pointer-events: none;
+}
+
+.leaflet-container {
+  font-family: inherit;
+}
+
+.leaflet-tooltip {
+  border: 1px solid var(--ink);
+  border-radius: 4px;
+  background: var(--paper);
+  color: var(--ink);
+  box-shadow: none;
+}
+
+@media (max-width: 760px) {
+  .topbar {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 12px 14px;
+  }
+
+  .layout {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    min-height: calc(100vh - 100px);
+  }
+
+  .panel {
+    order: 2;
+    border-right: 0;
+    border-top: 1px solid var(--line);
+  }
+
+  #map {
+    order: 1;
+    height: 62vh;
+    min-height: 320px;
+  }
+
+  .coords {
+    bottom: 10px;
+    right: 10px;
+  }
+}

@@ -11,6 +11,8 @@
 # Build output and local settings
 /target/
 /dist/
+/web/dist/
+/web/node_modules/
 node_modules/
 .env
 .env.*

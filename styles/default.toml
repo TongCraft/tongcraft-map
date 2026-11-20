@@ -1,0 +1,191 @@
+version = "v1"
+fallback = "#FF00FF"
+water = "#3F76E4"
+water_alpha_min = 90
+water_alpha_step = 18
+water_alpha_max = 220
+
+skip = [
+  "minecraft:air",
+  "minecraft:cave_air",
+  "minecraft:void_air",
+  "minecraft:short_grass",
+  "minecraft:tall_grass",
+  "minecraft:fern",
+  "minecraft:large_fern",
+  "minecraft:dead_bush",
+  "minecraft:dandelion",
+  "minecraft:poppy",
+  "minecraft:blue_orchid",
+  "minecraft:allium",
+  "minecraft:azure_bluet",
+  "minecraft:red_tulip",
+  "minecraft:orange_tulip",
+  "minecraft:white_tulip",
+  "minecraft:pink_tulip",
+  "minecraft:oxeye_daisy",
+  "minecraft:cornflower",
+  "minecraft:lily_of_the_valley",
+  "minecraft:sunflower",
+  "minecraft:lilac",
+  "minecraft:rose_bush",
+  "minecraft:peony",
+  "minecraft:torch",
+  "minecraft:wall_torch",
+  "minecraft:soul_torch",
+  "minecraft:soul_wall_torch",
+  "minecraft:redstone_torch",
+  "minecraft:redstone_wall_torch",
+  "minecraft:lantern",
+  "minecraft:soul_lantern",
+  "minecraft:rail",
+  "minecraft:powered_rail",
+  "minecraft:detector_rail",
+  "minecraft:activator_rail",
+  "minecraft:redstone_wire",
+  "minecraft:tripwire",
+  "minecraft:tripwire_hook",
+  "minecraft:lever",
+  "minecraft:fire",
+  "minecraft:soul_fire",
+  "minecraft:vine",
+  "minecraft:glow_lichen",
+  "minecraft:hanging_roots",
+  "minecraft:cave_vines",
+  "minecraft:cave_vines_plant",
+  "minecraft:kelp",
+  "minecraft:kelp_plant",
+  "minecraft:seagrass",
+  "minecraft:tall_seagrass",
+  "minecraft:sugar_cane",
+  "minecraft:bamboo",
+  "minecraft:sweet_berry_bush",
+  "minecraft:nether_sprouts",
+  "minecraft:warped_roots",
+  "minecraft:crimson_roots",
+  "minecraft:weeping_vines",
+  "minecraft:twisting_vines",
+  "minecraft:wheat",
+  "minecraft:carrots",
+  "minecraft:potatoes",
+  "minecraft:beetroots",
+  "minecraft:melon_stem",
+  "minecraft:pumpkin_stem",
+  "minecraft:torchflower_crop",
+  "minecraft:pitcher_crop",
+  "minecraft:barrier",
+  "minecraft:light",
+  "minecraft:structure_void",
+]
+
+water_blocks = [
+  "minecraft:water",
+  "minecraft:flowing_water",
+  "minecraft:bubble_column",
+]
+
+[blocks]
+"minecraft:grass_block" = "#6FA843"
+"minecraft:grass" = "#6FA843"
+"minecraft:dirt" = "#8B5A2B"
+"minecraft:coarse_dirt" = "#7B4A22"
+"minecraft:rooted_dirt" = "#8A5A36"
+"minecraft:podzol" = "#6B4F2A"
+"minecraft:mud" = "#3C3B3A"
+"minecraft:moss_block" = "#4A6A2A"
+"minecraft:mycelium" = "#7A6A6A"
+"minecraft:farmland" = "#6B4A2A"
+"minecraft:stone" = "#7F7F7F"
+"minecraft:cobblestone" = "#7A7A7A"
+"minecraft:mossy_cobblestone" = "#5A7A4A"
+"minecraft:deepslate" = "#4C4C4C"
+"minecraft:cobbled_deepslate" = "#4A4A4A"
+"minecraft:andesite" = "#8A8A8A"
+"minecraft:diorite" = "#C6C6C6"
+"minecraft:granite" = "#9A6B5D"
+"minecraft:tuff" = "#6D6E62"
+"minecraft:calcite" = "#D9D9D3"
+"minecraft:bedrock" = "#333333"
+"minecraft:sand" = "#DBD3A0"
+"minecraft:red_sand" = "#B86A32"
+"minecraft:sandstone" = "#D8CC90"
+"minecraft:red_sandstone" = "#B86A32"
+"minecraft:gravel" = "#8A8580"
+"minecraft:clay" = "#A5A8B8"
+"minecraft:snow_block" = "#F2F7F7"
+"minecraft:snow" = "#F2F7F7"
+"minecraft:ice" = "#9FC5E8"
+"minecraft:packed_ice" = "#8FB8E0"
+"minecraft:blue_ice" = "#7AA6E8"
+"minecraft:lava" = "#CF5A1A"
+"minecraft:magma_block" = "#B84A1A"
+"minecraft:oak_leaves" = "#4E7A32"
+"minecraft:spruce_leaves" = "#3E5F2E"
+"minecraft:birch_leaves" = "#7A9A4A"
+"minecraft:jungle_leaves" = "#4C8A2E"
+"minecraft:acacia_leaves" = "#6F8F3A"
+"minecraft:dark_oak_leaves" = "#3C5A28"
+"minecraft:mangrove_leaves" = "#4E7A32"
+"minecraft:cherry_leaves" = "#E6A6C8"
+"minecraft:azalea_leaves" = "#5E8A3A"
+"minecraft:flowering_azalea_leaves" = "#6E9A4A"
+"minecraft:oak_log" = "#6B5233"
+"minecraft:spruce_log" = "#5A4228"
+"minecraft:birch_log" = "#D7C9A8"
+"minecraft:jungle_log" = "#6B5233"
+"minecraft:acacia_log" = "#7A4A2A"
+"minecraft:dark_oak_log" = "#4A3420"
+"minecraft:mangrove_log" = "#5A3A2A"
+"minecraft:cherry_log" = "#B0806A"
+"minecraft:bamboo_block" = "#A8A24A"
+"minecraft:netherrack" = "#6E2A2A"
+"minecraft:nether_bricks" = "#3A2020"
+"minecraft:nether_brick" = "#3A2020"
+"minecraft:soul_sand" = "#5A4030"
+"minecraft:soul_soil" = "#4A3528"
+"minecraft:basalt" = "#4A4A4A"
+"minecraft:blackstone" = "#2E2A2E"
+"minecraft:crimson_nylium" = "#8A2A3A"
+"minecraft:warped_nylium" = "#2A7A6A"
+"minecraft:crimson_stem" = "#6A2A3A"
+"minecraft:warped_stem" = "#2A5A5A"
+"minecraft:glowstone" = "#E8C86A"
+"minecraft:shroomlight" = "#D89A5A"
+"minecraft:end_stone" = "#D8D8A0"
+"minecraft:purpur_block" = "#A87AA8"
+"minecraft:purpur_pillar" = "#A87AA8"
+"minecraft:obsidian" = "#1A1028"
+"minecraft:crying_obsidian" = "#3A2058"
+"minecraft:dragon_egg" = "#1A1028"
+"minecraft:amethyst_block" = "#8A6AB0"
+"minecraft:iron_block" = "#D8D8D8"
+"minecraft:gold_block" = "#F2D24A"
+"minecraft:diamond_block" = "#6AE8D8"
+"minecraft:emerald_block" = "#3AE86A"
+"minecraft:redstone_block" = "#C82A2A"
+"minecraft:lapis_block" = "#2A4AB8"
+"minecraft:coal_block" = "#1A1A1A"
+"minecraft:quartz_block" = "#E8E0D8"
+"minecraft:bricks" = "#9A4A3A"
+"minecraft:glass" = "#C8E8F0"
+"minecraft:glass_pane" = "#C8E8F0"
+"minecraft:pumpkin" = "#D88A2A"
+"minecraft:melon" = "#4A8A2A"
+"minecraft:hay_block" = "#C8A83A"
+"minecraft:terracotta" = "#985E43"
+"minecraft:white_terracotta" = "#D1B5A0"
+"minecraft:orange_terracotta" = "#A15325"
+"minecraft:yellow_terracotta" = "#B98423"
+"minecraft:red_terracotta" = "#8F3D2F"
+"minecraft:brown_terracotta" = "#4D3324"
+"minecraft:cyan_terracotta" = "#575B5B"
+"minecraft:light_gray_terracotta" = "#876A61"
+"minecraft:gray_terracotta" = "#392A23"
+"minecraft:black_terracotta" = "#251610"
+"minecraft:green_terracotta" = "#4C532A"
+"minecraft:blue_terracotta" = "#4A3B5B"
+"minecraft:purple_terracotta" = "#764656"
+"minecraft:magenta_terracotta" = "#95586C"
+"minecraft:pink_terracotta" = "#A24E4E"
+"minecraft:light_blue_terracotta" = "#716D82"
+"minecraft:lime_terracotta" = "#677535"

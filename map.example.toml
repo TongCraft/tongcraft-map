@@ -1,0 +1,21 @@
+version = 1
+style = "styles/default.toml"
+# markers = "markers.public.json"
+
+[output]
+dir = "output"
+
+[render]
+threads = 4
+
+# 省略 path 时按 26.1 dimensions/minecraft/.../region 探测，再回退旧版目录。
+# 新旧布局同时存在会报错，必须用 path 显式选择。
+[dimensions.world]
+layer = "surface"
+
+[dimensions.world_nether]
+# 下界必须显式选择交通层，不能自动取最高方块。
+layer = { below_y = 100 }
+
+[dimensions.world_the_end]
+layer = "surface"

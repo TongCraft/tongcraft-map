@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light" />
+    <title>TongCraft 地图</title>
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <h1>TongCraft 地图</h1>
+      </div>
+      <nav id="dimensions" class="dimensions" aria-label="选择维度"></nav>
+    </header>
+    <main class="layout">
+      <aside class="panel" aria-label="地图工具">
+        <p id="release-note" class="note">正在读取地图版本…</p>
+        <label class="field" for="marker-select">查找机器</label>
+        <select id="marker-select">
+          <option value="">选择一台机器…</option>
+        </select>
+        <section id="marker-detail" class="detail" aria-live="polite">
+          <p class="muted">选择机器后可查看坐标和产物。</p>
+        </section>
+        <button id="share" type="button" class="button">复制当前位置链接</button>
+        <p id="status" class="status" role="status"></p>
+        <p class="muted small">
+          地图来自最近一次发布的快照，不显示实时玩家。Y 坐标仅用于机器详情，不参与平面定位。
+        </p>
+      </aside>
+      <div id="map" aria-label="离线地图"></div>
+    </main>
+    <div id="coords" class="coords" aria-live="off">X — · Z —</div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
