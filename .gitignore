@@ -1,0 +1,17 @@
+# Private Minecraft snapshots and local render output
+/snapshots/
+/output/
+/cache/
+*.mca
+*.mcc
+
+# Local-only unit test sources, fixtures, and reports
+/.local-tests/
+
+# Build output and local settings
+/target/
+/dist/
+node_modules/
+.env
+.env.*
+!.env.example

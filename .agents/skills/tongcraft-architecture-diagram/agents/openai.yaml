@@ -1,0 +1,4 @@
+interface:
+  display_name: "TongCraft 架构图"
+  short_description: "生成 TongCraft 架构图，自动局部修正并核对文字和箭头"
+  default_prompt: "用 $tongcraft-architecture-diagram 更新 TongCraft 的架构总览图并完成校验。"
